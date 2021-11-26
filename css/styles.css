@@ -155,7 +155,13 @@ svg {
   border-radius: 2px;
   left: 0;
   bottom: -32px;
+  transition: color var(--transition-duration-timing-function);
 }
+.active::after:hover,
+.active::after:focus {
+  color: var(--accent-text-color);
+}
+
 .link-nav {
   transition: color var(--transition-duration-timing-function);
 }
