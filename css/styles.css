@@ -9,6 +9,7 @@
   --header-border-color: #ececec;
   --border-color: #eeeeee;
   --background-hero-color: #c4c4c4;
+  --transition-duration-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 html {
   box-sizing: border-box;
@@ -55,6 +56,8 @@ body {
 .button {
   font-family: inherit;
   cursor: pointer;
+  transition: color var(--transition-duration-timing-function),
+    background-color var(--transition-duration-timing-function);
 }
 .button:hover,
 .button:focus {
@@ -139,6 +142,9 @@ svg {
 .current.link {
   color: var(--accent-text-color);
 }
+.link-nav {
+  transition: color var(--transition-duration-timing-function);
+}
 .link-nav:hover,
 .link-nav:focus {
   color: var(--accent-text-color);
@@ -152,6 +158,7 @@ svg {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color var(--transition-duration-timing-function);
 }
 
 .item-direction {
@@ -353,6 +360,8 @@ svg {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition: color var(--transition-duration-timing-function),
+    background-color var(--transition-duration-timing-function);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -394,6 +403,8 @@ svg {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  transition: color var(--transition-duration-timing-function),
+    border-color var(--transition-duration-timing-function);
 }
 .link-clients:hover,
 .link-clients:focus {
@@ -454,6 +465,7 @@ svg {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color var(--transition-duration-timing-function);
 }
 .link-footer:hover,
 .link-footer:focus {
@@ -492,6 +504,8 @@ svg {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
+  transition: color var(--transition-duration-timing-function),
+    background-color var(--transition-duration-timing-function);
 }
 .join-link:hover,
 .join-link:focus {
@@ -523,6 +537,7 @@ svg {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-left: 8px;
+  transition: box-shadow var(--transition-duration-timing-function);
 }
 .button-projects:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -539,6 +554,7 @@ svg {
   width: 73px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow var(--transition-duration-timing-function);
 }
 .current.button:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -574,6 +590,7 @@ svg {
 }
 .link-projects {
   display: inline-block;
+  transition: box-shadow var(--transition-duration-timing-function);
 }
 .link-projects:hover {
   cursor: pointer;
