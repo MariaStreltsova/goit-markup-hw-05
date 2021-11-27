@@ -304,6 +304,29 @@ svg {
   margin-left: 30px;
   margin-top: 30px;
 }
+.work-description {
+  position: relative;
+}
+.work-description-text {
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  position: absolute;
+  background-color: rgba(47, 48, 58, 0.8);
+  vertical-align: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*------------------------------------------------team----------------------------------*/
 .team {
   min-height: 708px;
@@ -647,7 +670,7 @@ svg {
   padding: 63px 24px;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 250ms;
+  transition: transform var(--transition-duration-timing-function);
 }
 .item-projects:hover .projects-top-text {
   transform: translateY(0);
