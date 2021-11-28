@@ -701,6 +701,7 @@ svg {
   transition: transform var(--transition-duration-timing-function);
 }
 .modal-close {
+  cursor: pointer;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -712,7 +713,6 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .is-hidden {
